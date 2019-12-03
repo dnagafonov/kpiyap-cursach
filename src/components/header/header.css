@@ -1,0 +1,29 @@
+header {
+    background-color: #250729;
+    color: lightgrey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header-text {
+    font-size: 20px;
+    margin: 10px 10px 10px 3%;
+}
+nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    margin: 10px;
+    color: lightgrey;
+    text-decoration: none;
+    border-bottom: solid lightgrey;
+    transition: ease 0.5s;
+}
+
+a:hover{
+    border-bottom: solid lightseagreen;
+}
