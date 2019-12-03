@@ -5,6 +5,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    font-family: Consolas;
 }
 .header-text {
     font-size: 20px;
