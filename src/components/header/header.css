@@ -1,11 +1,11 @@
 header {
     background-color: #250729;
-    color: lightgrey;
+    color: lightseagreen;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    font-family: Consolas;
+    font-family: Consolas, serif;
 }
 .header-text {
     font-size: 20px;
@@ -14,10 +14,11 @@ header {
     transition: ease 1.3s;
     margin: 10px 10px 10px 3%;
     border-bottom: none;
+
 }
 .header-text:hover{
     transition: ease 1s;
-    color: #f37777;
+    color: lightseagreen;
 }
 .header-text a {
     color: white;
@@ -40,6 +41,21 @@ header {
 
 .navigation a:hover{
     transition: ease 0.5s;
-    border-bottom: 2px solid lightcoral;
-    color: lightcoral;
+    border-bottom: 2px solid lightseagreen;
+    color: lightseagreen;
+}
+
+.navigation .icon {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .navigation a{
+        display: none;
+    }
+    .navigation a.icon {
+        display: flex;
+        border: none;
+        align-items: center;
+    }
 }
