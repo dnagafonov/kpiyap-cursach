@@ -1,18 +1,27 @@
 import React from 'react';
+import {Route, Switch} from 'react-router';
+import {BrowserRouter as Router, Link} from "react-router-dom";
+
 import './header.css';
-import Button from "../buttons/button";
 
 const Header = () => {
     return(
-        <header>
-            <div className="header-text">Text</div>
-            <nav>
-                <Button btnStyle="danger">ds</Button>
-                <a href="#">dfde</a>
-                <a href="#">dfdf</a>
-                <a href="#">dsde</a>
-            </nav>
-        </header>
+        <Router>
+            <header>
+                <div className="header-text">Text</div>
+                    <nav>
+                        <Link to="/">home</Link>
+                        <Link to="/services">services</Link>
+                        <Link to="/information">info</Link>
+                        <Link to="/account">account</Link>
+                    </nav>
+{/*             <Switch>
+                    <Route exact path="/">home</Route>
+                    <Route path="/services">services</Route>
+                    <Route path="/information">info</Route>
+                </Switch>*/}
+            </header>
+        </Router>
     )
 }
 

@@ -9,10 +9,16 @@ header {
 }
 .header-text {
     font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease 1.3s;
     margin: 10px 10px 10px 3%;
 }
+.header-text:hover{
+    transition: ease-in 1s;
+}
 nav {
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -21,10 +27,13 @@ a {
     margin: 10px;
     color: lightgrey;
     text-decoration: none;
-    border-bottom: solid lightgrey;
+    border-bottom: 2px solid lightgrey;
     transition: ease 0.5s;
+    text-transform: uppercase;
 }
 
 a:hover{
-    border-bottom: solid lightseagreen;
+    transition: ease 0.5s;
+    border-bottom: 2px solid lightcoral;
+    color: lightcoral;
 }

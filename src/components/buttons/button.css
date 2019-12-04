@@ -8,6 +8,7 @@
     color: #250729;
     font-weight: bold;
     font-family: Consolas;
+    outline: none;
 }
 .btn:hover{
     transition: ease 0.5s;
@@ -28,7 +29,7 @@
     text-transform: uppercase;
     transition: all 0.5s;
 }
-.danger:hover {
+.danger:hover{
     background-color: crimson;
     transition: all 0.5s;
 }
