@@ -8,9 +8,8 @@ const Header = () => {
     return(
         <Router>
             <header>
-                <div className="header-text">Text</div>
-                    <nav>
-                        <Link to="/">home</Link>
+                <div className="header-text"><Link to="/">Text</Link></div>
+                    <nav className="navigation">
                         <Link to="/services">services</Link>
                         <Link to="/information">info</Link>
                         <Link to="/account">account</Link>
