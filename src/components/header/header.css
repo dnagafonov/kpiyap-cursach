@@ -45,6 +45,28 @@ header {
     color: lightseagreen;
 }
 
+.navigation a.icon span,
+.navigation a.icon span::before,
+.navigation a.icon span::after {
+    display: block;
+    height: 2px;
+    width: 10px;
+    background-color: lime;
+}
+
+.navigation a.icon span::before,
+.navigation a.icon span::after {
+    content: '';
+}
+
+.navigation a.icon span::before{
+    transform: translateY(-5px);
+}
+
+.navigation a.icon span::after{
+    transform: translateY(5px);
+}
+
 .navigation .icon {
     display: none;
 }

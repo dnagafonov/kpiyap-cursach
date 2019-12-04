@@ -12,7 +12,7 @@ const Header = () => {
                         <Link to="/services">services</Link>
                         <Link to="/information">info</Link>
                         <Link to="/account">account</Link>
-                        <Link to="/menu" className="icon"><i className="fa fa-close"/></Link>
+                        <Link to="/menu" className="icon"><span></span></Link>
                     </nav>
             </header>
         </Router>
