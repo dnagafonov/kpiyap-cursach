@@ -14,9 +14,8 @@ header {
     transition: ease 1.3s;
     margin: 10px 10px 10px 3%;
     border-bottom: none;
-
 }
-.header-text:hover{
+.header-text a:hover{
     transition: ease 1s;
     color: lightseagreen;
 }
@@ -35,7 +34,7 @@ header {
     color: lightgrey;
     text-decoration: none;
     border-bottom: 2px solid lightgrey;
-    transition: ease 0.5s;
+    transition: cubic-bezier(1, 0.15, 0.78, 0.26) 0.4s;
     text-transform: uppercase;
 }
 
@@ -45,29 +44,19 @@ header {
     color: lightseagreen;
 }
 
-.navigation a.icon span,
-.navigation a.icon span::before,
-.navigation a.icon span::after {
+.navigation a:last-child {
+    margin-right: 10px;
+}
+
+a.icon span {
+    position: absolute;
     display: block;
     height: 2px;
     width: 10px;
-    background-color: lime;
+    background-color: ghostwhite;
 }
 
-.navigation a.icon span::before,
-.navigation a.icon span::after {
-    content: '';
-}
-
-.navigation a.icon span::before{
-    transform: translateY(-5px);
-}
-
-.navigation a.icon span::after{
-    transform: translateY(5px);
-}
-
-.navigation .icon {
+.icon {
     display: none;
 }
 
@@ -75,9 +64,18 @@ header {
     .navigation a{
         display: none;
     }
-    .navigation a.icon {
+    a.icon {
+        height: 30px;
+        width: 30px;
+        margin: auto;
         display: flex;
         border: none;
+        justify-content: center;
         align-items: center;
+    }
+    a.icon:hover{
+        border: none;
+        background-color: lightseagreen;
+        border-radius: 2px;
     }
 }

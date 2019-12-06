@@ -8,12 +8,14 @@ const Header = () => {
         <Router>
             <header>
                 <div className="header-text"><Link to="/">Text</Link></div>
-                    <nav className="navigation">
-                        <Link to="/services">services</Link>
-                        <Link to="/information">info</Link>
-                        <Link to="/account">account</Link>
-                        <Link to="/menu" className="icon"><span></span></Link>
-                    </nav>
+                <nav className="navigation">
+                    <Link to="/services">services</Link>
+                    <Link to="/information">info</Link>
+                    <Link to="/account">account</Link>
+                    <Link to="/menu" className="icon">
+                        <span></span>
+                    </Link>
+                </nav>
             </header>
         </Router>
     )
