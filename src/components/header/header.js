@@ -7,13 +7,15 @@ const Header = () => {
     return(
         <Router>
             <header>
-                <div className="header-text"><Link to="/">Text</Link></div>
+                <div className="header-text">
+                    <Link to="/">Autoservice🚘</Link>
+                </div>
                 <nav className="navigation">
                     <Link to="/services">services</Link>
                     <Link to="/information">info</Link>
                     <Link to="/account">account</Link>
                     <Link to="/menu" className="icon">
-                        <span></span>
+                        <span/>
                     </Link>
                 </nav>
             </header>
