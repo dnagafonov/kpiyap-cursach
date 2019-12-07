@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from "./components/header/header";
 import Body from "./components/body/body";
-import {Route, Switch} from "react-router";
-import {BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
       <Router>
+          <Header/>
           <Switch>
-              <Header/>
               <Route exact path="/" component={Body}/>
+              <Route path="/services" render={() => <p>services</p>}/>
+              <Route path="/information" render={() => <p>information</p>}/>
+              <Route path="/account" render={() => <p>account</p>}/>
           </Switch>
       </Router>
   );

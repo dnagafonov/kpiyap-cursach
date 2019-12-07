@@ -1,10 +1,9 @@
 import React from 'react';
 import './input.css'
 
-const Input = ({placeholder, type, className, height, width, onChange, margin}) => <input placeholder={placeholder}
+const Input = ({placeholder, type, className, onChange}) => <input placeholder={placeholder}
                                                 type={type}
                                                 className={"input "+{className}}
-                                                style={{height:{height}, margin:{margin}}}
                                                 onChange={onChange}/>;
 
 export default Input;
