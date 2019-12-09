@@ -1,4 +1,6 @@
 .body-container {
-    width: 100vh;
-    background-color: lime;
+    margin: 0;
+    padding: 0;
+    height: 92.2vh;
+    background-color: ghostwhite;
 }

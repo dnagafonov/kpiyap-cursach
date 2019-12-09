@@ -1,0 +1,35 @@
+.info-container {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: inherit;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-block {
+    height: 80%;
+    width: 90%;
+    background-color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font: 30px Pristina bold;
+}
+
+.information-flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rebeccapurple;
+    margin: 15px;
+}
+
+.left-panel,
+.right-panel{
+    margin: 10px;
+}
